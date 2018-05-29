@@ -1,0 +1,14 @@
+GET
+    1. http://localhost:8761/
+    2. http://localhost:8300/rest/db/Peter
+    3. http://localhost:8301/rest/stock/Peter
+    4. http://localhost:8761/api/db-service/rest/db/Peter
+    5. http://localhost:8761/api/stock-service/rest/stock/Peter
+
+POST
+    1. http://localhost:8300/rest/db/add
+        {"userName":"Peter","quotes":["GOOG","APPL","AMZN"]}
+    2. http://localhost:8300/rest/db/delete/Peter
+    3. http://localhost:8761/api/db-service/rest/db/add
+        {"userName":"Peter","quotes":["GOOG","APPL","AMZN"]}
+    4. http://localhost:8761/api/db-service/rest/db/delete/Peter
